@@ -15,6 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: configure
       run: ./configure
+      options: --user root
     - name: make
       run: make
     - name: make check
